@@ -31,16 +31,16 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(2, Variance.variance(self.test))
 
     def test_stddev(self):
-        self.assertEqual(1.4142135623731, Stddev.stddev(self.test))
+        self.assertEqual(1.5811388300841898, Stddev.stddev(self.test))
 
     def test_firstQuartile(self):
-        self.assertEqual(2, FirstQuartiles.firstQuartile(self.test3))
+        self.assertEqual(2.5, FirstQuartiles.firstQuartile(self.test3))
 
     def test_secondQuartile(self):
         self.assertEqual(4, SecondQuartiles.secondQuartile(self.test3))
 
     def test_thirdQuartile(self):
-        self.assertEqual(6, ThirdQuartiles.thirdQuartile(self.test3))
+        self.assertEqual(5.5, ThirdQuartiles.thirdQuartile(self.test3))
 
 
 if __name__ == '__main__':
