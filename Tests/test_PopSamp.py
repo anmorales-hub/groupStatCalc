@@ -17,9 +17,9 @@ class MyTestCase(unittest.TestCase):
                 x = False
         self.assertEqual(True, x)
 
-    def test_systematicSamp(self):
-        result = SystematicSamp.systematicSamp(3,self.test)
-        self.assertEqual([2,4,6], result)
+    def test_sysSamp(self):
+        result = SystematicSamp.systematicSamp(seed=1, nums=4, data=self.test)
+        self.assertEqual(result, [2, 5, 1, 3])
 
 if __name__ == '__main__':
     unittest.main()
