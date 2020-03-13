@@ -71,7 +71,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(zsc, -1.3228756555322954)
         
     def test_sampleCorrelation(self):
-        self.assertEqual(0.9630868246861537, SampleCorrelation.samplecorrelation(2, 5, self.test4, self.test4))
+        self.assertEqual(1.0000000000000002, SampleCorrelation.samplecorrelation(2, 5, self.test4, self.test4))
         
     def test_populationProportion(self):
         result = PopulationProportion.populationPorportion(data=self.test1, nums=6, seeds=4)
