@@ -2,8 +2,8 @@
 <h3>Stats Calulator</h3>
 
 1. <h4>Math Operations</h4>
-    *  __Addition__
-    * __Subtraction__
+    *     __Addition__
+    *    __Subtraction__
     * __Multiplication__
     * __Division__
     * __Exponent__
