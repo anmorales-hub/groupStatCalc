@@ -58,3 +58,35 @@
          * import variance from numpy
      * **Skewness**
          * import skew from scipy
+
+4. <h3> Population Sampling </h3>
+
+     * **Simple Random Sample**
+         * import listPickListSeed from ListPick class - generates random sample from data set
+     * **Systematic Sample**
+         * import listPickListSeed from ListPick class
+     * **Margin of Error**
+         * import zsc from Zsc class (z-score)
+         * import stddev from Stddev class (standard deviation)
+     * **Confidence Interval (Population)**
+         * import sem and t from scipy.stats
+         * import mean from Mean class
+     * **Confidence Interval (Sample)** 
+         * import simpRandSamp from SimpRandSamp class (simple random sample)
+         * import confidenceIntervalPopulation from ConfidenceIntervalPopulation class
+     * **Cochran Sample Size Formula**
+         * import zsc from Zsc class (z-score)
+         * import marginOfError from MarginOfError class
+         * import exponent and subraction from MathOperations
+         * import populationProportion from PopulationProportion class
+     * **Sample Size with conf. interval and width (no pop. std dev)**
+         * import exponent, division, and subtraction from MathOperations
+         * import zsc from Zsc class (z-score)
+         * import marginOfError from Margin of Error class
+      * **Sample Size with conf. interval and width (known pop. std dev)**
+         * import exponent from MathOperations
+         * import zsc from Zsc class (z-score)
+         * import marginOfError from Margin of Error class
+         * import stddev from Stddev class (standard deviation)
+         
+     
