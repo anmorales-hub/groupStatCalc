@@ -2,13 +2,13 @@
 <h3>Stats Calulator</h3>
 
 1. <h4>Math Operations</h4>
-    * **Addition**
-    * **Subtraction**
-    * **Multiplication**
-    * **Division **
-    * **Exponent**
-    * **Root**
-    * **Log**
+    * __Addition__
+    * __Subtraction__
+    * __Multiplication__
+    * __Division__
+    * __Exponent__
+    * __Root__
+    * __Log__
     
 2. Random Number Generator
     * Random Integer
