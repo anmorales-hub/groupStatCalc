@@ -19,19 +19,19 @@ class MyTestCase(unittest.TestCase):
 
     def test_marginOfError(self):
         result = MarginOfError.marginOfError(2, self.test)
-        self.assertEqual(result, -2.0)
+        self.assertEqual(result, -2.5)
 
     def test_confidenceIntervalPopulation(self):
         result = ConfidenceIntervalPopulation.confidenceIntervalPopulation(confidence=.90, data=self.test)
-        self.assertEqual(result, (1.9873051382212144, 4.012694861778786))
+        self.assertEqual(result, (1.9609813838743337, 5.0390186161256665))
 
     def test_confidenceIntervalSample(self):
         result = ConfidenceIntervalSample.confidenceIntervalSample(confidence=.90, seed=1, nums=5, data=self.test)
-        self.assertEqual(result, (1.426075892772384, 6.173924107227616))
+        self.assertEqual(result, (0.8046719486285641, 3.9953280513714358))
 
     def test_unknownPopulationStdev(self):
         result = UnknownPopulationStdev.unknownPopulationStdev(seed=1, data=self.test, percent=.50)
-        self.assertEqual(result, 0.04281345565749235)
+        self.assertEqual(result, 0.07142857142857144)
 
     def test_knownSampleSize(self):
         result = KnownSampleSize.knownSamplesize(seed=4, data=self.test)
