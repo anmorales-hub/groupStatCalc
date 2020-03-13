@@ -1,11 +1,14 @@
 import unittest
 import random
+
 from PopulationSampling.marginOfError import MarginOfError
 from PopulationSampling.confidenceIntervalPopulation import ConfidenceIntervalPopulation
 from PopulationSampling.cochran import Cochran
 from PopulationSampling.confidenceIntervalSample import ConfidenceIntervalSample
 from PopulationSampling.unknownPopulationStdev import UnknownPopulationStdev
 from PopulationSampling.knowSampleSize import KnownSampleSize
+from PopulationSampling.simpRandSamp import SimpRandSamp
+from PopulationSampling.systematicSamp import SystematicSamp
 
 
 class MyTestCase(unittest.TestCase):
@@ -41,3 +44,20 @@ class MyTestCase(unittest.TestCase):
     def test_cochran(self):
         result = Cochran.cochran(data=self.test, seeds=1, nums=4)
         self.assertEqual(result, 0.04281345565749235)
+
+    def test_simpRandSamp(self):
+        result = SimpRandSamp.simpRandSamp(3,3, self.test)
+        x = None
+        for i in result:
+            if i in self.test:
+                x = True
+            else:
+                x = False
+        self.assertEqual(True, x)
+
+    def test_sysSamp(self):
+        result = SystematicSamp.systematicSamp(seed=1, nums=4, data=self.test)
+        self.assertEqual(result, [2, 5, 1, 3])
+
+if __name__ == '__main__':
+    unittest.main()

@@ -13,6 +13,9 @@ from DescriptiveStatictics.meanDeviation import MeanDeviation
 from DescriptiveStatictics.covariance import Covariance
 from DescriptiveStatictics.populationcorrelation import PopulationCorrelation
 from DescriptiveStatictics.skewness import Skewness
+from DescriptiveStatictics.zsc import Zsc
+from DescriptiveStatictics.samplecorrelation import SampleCorrelation
+from DescriptiveStatictics.populationProportion import PopulationProportion
 
 
 class MyTestCase(unittest.TestCase):
@@ -38,16 +41,16 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(2, Variance.variance(self.test))
 
     def test_stddev(self):
-        self.assertEqual(1.4142135623731, Stddev.stddev(self.test))
+        self.assertEqual(1.5811388300841898, Stddev.stddev(self.test))
 
     def test_firstQuartile(self):
-        self.assertEqual(2, FirstQuartiles.firstQuartile(self.test3))
+        self.assertEqual(2.5, FirstQuartiles.firstQuartile(self.test3))
 
     def test_secondQuartile(self):
         self.assertEqual(4, SecondQuartiles.secondQuartile(self.test3))
 
     def test_thirdQuartile(self):
-        self.assertEqual(6, ThirdQuartiles.thirdQuartile(self.test3))
+        self.assertEqual(5.5, ThirdQuartiles.thirdQuartile(self.test3))
 
     def test_meanDeviation(self):
         self.assertEqual(1.5, MeanDeviation.meanDeviation(self.test4))
@@ -62,14 +65,17 @@ class MyTestCase(unittest.TestCase):
 
     def test_skewness(self):
         self.assertEqual(0, Skewness.skewness(self.test5))
+        
     def test_zsc(self):
         zsc = Zsc.zsc(1, self.test)
-        self.assertEqual(zsc, -1.3228756555322954)
+        self.assertEqual(zsc, -0.6324555320336759)
+        
     def test_sampleCorrelation(self):
-        self.assertEqual(0.9630868246861537, SampleCorrelation.samplecorrelation(2, 5, self.test4, self.test4))
+        self.assertEqual(1.0000000000000002, SampleCorrelation.samplecorrelation(2, 5, self.test4, self.test4))
+        
     def test_populationProportion(self):
         result = PopulationProportion.populationPorportion(data=self.test1, nums=6, seeds=4)
-        self.assertEqual(result, 0.75)
+        self.assertEqual(result, 1.2)
 
 
 
