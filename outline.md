@@ -11,7 +11,7 @@
     * __Root__
     * __Log__
     
-2. <h3> Random Number Generator </h3>
+2. <h3> Random Number Generator (RNG)</h3>
 
     * __Random Integer__
         * Specified seed
@@ -28,7 +28,7 @@
         * Specified seed
         * No specified seed
         
-3. <h3>Statistic Functions</h3>
+3. <h3>Descriptive Statistic Functions</h3>
 
      * **Mean**
          * import mean from numpy
@@ -56,3 +56,5 @@
          * import percentile function from numpy
      * **Variance**
          * import variance from numpy
+     * **Skewness**
+         * import skew from scipy
