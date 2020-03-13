@@ -15,7 +15,7 @@ from DescriptiveStatictics.populationcorrelation import PopulationCorrelation
 from DescriptiveStatictics.skewness import Skewness
 from DescriptiveStatictics.zsc import Zsc
 from DescriptiveStatictics.samplecorrelation import SampleCorrelation
-from DescriptiveStatictics.populationproportion import PopulationProportion
+from DescriptiveStatictics.populationProportion import PopulationProportion
 
 
 class MyTestCase(unittest.TestCase):
