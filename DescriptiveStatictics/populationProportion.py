@@ -1,4 +1,4 @@
-from RandomNumberGenerator.listPick import ListPick
+from RNG.listPick import ListPick
 
 
 class PopulationProportion:
