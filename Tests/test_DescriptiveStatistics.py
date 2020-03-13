@@ -13,6 +13,9 @@ from DescriptiveStatictics.meanDeviation import MeanDeviation
 from DescriptiveStatictics.covariance import Covariance
 from DescriptiveStatictics.populationcorrelation import PopulationCorrelation
 from DescriptiveStatictics.skewness import Skewness
+from DescriptiveStatictics.zsc import Zsc
+from DescriptiveStatictics.samplecorrelation import SampleCorrelation
+from DescriptiveStatictics.populationproportion import PopulationProportion
 
 
 class MyTestCase(unittest.TestCase):
@@ -62,11 +65,14 @@ class MyTestCase(unittest.TestCase):
 
     def test_skewness(self):
         self.assertEqual(0, Skewness.skewness(self.test5))
+        
     def test_zsc(self):
         zsc = Zsc.zsc(1, self.test)
         self.assertEqual(zsc, -1.3228756555322954)
+        
     def test_sampleCorrelation(self):
         self.assertEqual(0.9630868246861537, SampleCorrelation.samplecorrelation(2, 5, self.test4, self.test4))
+        
     def test_populationProportion(self):
         result = PopulationProportion.populationPorportion(data=self.test1, nums=6, seeds=4)
         self.assertEqual(result, 0.75)
