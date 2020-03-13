@@ -43,7 +43,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_cochran(self):
         result = Cochran.cochran(data=self.test, seeds=1, nums=4)
-        self.assertEqual(result, 0.04281345565749235)
+        self.assertEqual(result,  0.0634920634920635)
 
     def test_simpRandSamp(self):
         result = SimpRandSamp.simpRandSamp(3,3, self.test)
