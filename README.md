@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/anmorales-hub/groupStatCalc.svg?branch=master)](https://travis-ci.org/anmorales-hub/groupStatCalc)
 
 <h1>Group Stats Calculator Project</h1>
-Group project for IS218 - Andrey Morales (anmorales-hub) and Kofi Otu-Manteaw (Paakofi62)
+<h4>Group project for IS218 - Andrey Morales (anmorales-hub) and Kofi Otu-Manteaw (Paakofi62)</h4>
 
 This project utilizes Docker and unittests to ensure that the code functions properly. Docker is used to create a container that imports modules such as numpy and scipy, as well as the unittests themselves. Travis-ci implemented to keep track of the program's build state.
 
