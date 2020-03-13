@@ -6,7 +6,7 @@ from RNG.listPick import ListPick
 class Zsc:
     @staticmethod
     def zsc(seed, data):
-        X = ListPick.ListPickSeed(seed, data)
+        X = ListPick.listPickSeed(seed, data)
         mean = Mean.mean(data)
         stddev = Stddev.stddev(data)
         return (X - mean) / stddev
