@@ -1,14 +1,14 @@
 <h1>Outline</h1>
 <h3>Stats Calulator</h3>
 
-1. Math Operations
-    * Addition
-    * Subtraction
-    * Multiplication
-    * Division 
-    * Exponent
-    * Root
-    * Log
+1. <h4>Math Operations</h4>
+    * **Addition
+    * **Subtraction
+    * **Multiplication
+    * **Division 
+    * **Exponent
+    * **Root
+    * **Log
     
 2. Random Number Generator
     * Random Integer
