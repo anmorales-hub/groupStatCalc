@@ -11,7 +11,7 @@ from PopulationSampling.knowSampleSize import KnownSampleSize
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.test = [1, 2, 2, 2, 3, 4, 5, 6]
+        self.test = [1, 2, 3, 4, 5, 6]
         random.seed(1)
 
     def test_marginOfError(self):
