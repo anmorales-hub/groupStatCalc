@@ -68,7 +68,7 @@ class MyTestCase(unittest.TestCase):
         
     def test_zsc(self):
         zsc = Zsc.zsc(1, self.test)
-        self.assertEqual(zsc, -1.3228756555322954)
+        self.assertEqual(zsc, -0.6324555320336759)
         
     def test_sampleCorrelation(self):
         self.assertEqual(1.0000000000000002, SampleCorrelation.samplecorrelation(2, 5, self.test4, self.test4))
