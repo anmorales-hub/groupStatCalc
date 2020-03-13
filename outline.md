@@ -2,13 +2,13 @@
 <h3>Stats Calulator</h3>
 
 1. <h4>Math Operations</h4>
-    * **Addition
-    * **Subtraction
-    * **Multiplication
-    * **Division 
-    * **Exponent
-    * **Root
-    * **Log
+    * **Addition**
+    * **Subtraction**
+    * **Multiplication**
+    * **Division **
+    * **Exponent**
+    * **Root**
+    * **Log**
     
 2. Random Number Generator
     * Random Integer
