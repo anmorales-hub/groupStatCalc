@@ -75,7 +75,7 @@ class MyTestCase(unittest.TestCase):
         
     def test_populationProportion(self):
         result = PopulationProportion.populationPorportion(data=self.test1, nums=6, seeds=4)
-        self.assertEqual(result, 0.75)
+        self.assertEqual(result, 1.2)
 
 
 
