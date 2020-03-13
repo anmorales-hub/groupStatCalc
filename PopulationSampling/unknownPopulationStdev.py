@@ -12,7 +12,7 @@ class UnknownPopulationStdev:
         MarOfError = MarginOfError.marginOfError(seed, data)
         p = percent
         q = Subtraction.difference(1, p)
-        pq = Division.division(ZScore, MarOfError)
-        samplePopulation = Exponent.exponent(pq, 2) * p * q
+        pq = Division.quotient(ZScore, MarOfError)
+        samplePopulation = Exponent.power(pq, 2) * p * q
 
         return samplePopulation

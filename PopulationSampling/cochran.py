@@ -12,5 +12,5 @@ class Cochran:
         pp = PopulationProportion.populationPorportion(seeds, nums, data)
         MarOfError = MarginOfError.marginOfError(seeds, data)
         sub = Subtraction.difference(1, pp)
-        cochran = (Exponent.exponent(ZScore, 2) * pp * sub) / Exponent.exponent(MarOfError, 2)
+        cochran = (Exponent.power(ZScore, 2) * pp * sub) / Exponent.power(MarOfError, 2)
         return cochran

@@ -11,5 +11,5 @@ class KnownSampleSize:
         Mar = MarginOfError.marginOfError(seed, data)
         StDe = Stddev.stddev(data)
         value = (z * StDe) / Mar
-        sam = Exponent.exponent(value, 2)
+        sam = Exponent.power(value, 2)
         return sam
