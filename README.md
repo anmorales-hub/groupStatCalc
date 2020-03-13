@@ -7,4 +7,4 @@ This project utilizes Docker and unittests to ensure that the code functions pro
 
 See [tests](https://github.com/anmorales-hub/groupStatCalc/tree/master/Tests) to view the tests used for each function.
 
-See the [Task Assignment Project](https://github.com/anmorales-hub/groupStatCalc/projects/1) of this repository to view the descriptions and formulas of each function used.
+See the [Task Assignment Project](https://github.com/anmorales-hub/groupStatCalc/projects/1) of this repository to view the descriptions and formulas of each function used in addition to who did which assignment
